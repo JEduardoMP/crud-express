@@ -75,7 +75,7 @@ const updateTask = async(id, task) => {
   }
 };
 
-const deleteTask = (id) => {
+const deleteTask = async(id) => {
   try {
     const tasks = await getAllTasks();
     const taskIndex = tasks.find(e => e.id === id);
